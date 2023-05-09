@@ -1,0 +1,402 @@
+$main-color-text: #140342;
+$primary-color: #6440fb;
+$color-gray: #746898;
+
+// start head_title
+.head_title {
+  padding-top: 40px;
+
+  .title {
+    font-size: 25px;
+    font-weight: 700;
+    color: $main-color-text;
+    margin-bottom: 1px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    color: $color-gray;
+  }
+}
+// end head_title
+
+// start layout_courses
+.layout_courses {
+  padding: 60px 0;
+
+  .line {
+    display: flex;
+    gap: 40px;
+
+    .left {
+      width: 25%;
+
+      .filter_category,
+      .filter_rating,
+      .filter_instructors,
+      .filter_price {
+        padding-bottom: 25px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(186, 186, 186);
+
+        .head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          cursor: pointer;
+
+          h4 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 23px;
+          }
+
+          i {
+            font-size: 18px;
+          }
+        }
+
+        .items {
+          .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+
+            .input {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              input {
+                width: 17px;
+                height: 17px;
+              }
+
+              span {
+                font-size: 15px;
+                color: $main-color-text;
+
+                i {
+                  font-size: 14px;
+                  color: goldenrod;
+                }
+              }
+            }
+
+            .num {
+              color: $color-gray;
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 75%;
+
+      .head_boxs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+          color: $color-gray;
+          margin-bottom: 0;
+        }
+
+        .sort_by {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: $color-gray;
+
+          select {
+            height: 50px;
+            border-radius: 8px;
+            background-color: #dbd7e5;
+            color: #483e66;
+            padding: 12px 16px;
+            border: none;
+          }
+        }
+      }
+
+      .boxs {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+
+        .box {
+          overflow: hidden;
+          &:hover {
+            .image {
+              img {
+                transform: scale(1.1);
+              }
+            }
+          }
+          .image {
+            overflow: hidden;
+            border-radius: 10px;
+
+            img {
+              width: 100%;
+              height: 210px;
+              object-fit: cover;
+              transition: all 0.3s;
+            }
+          }
+
+          .content {
+            margin-top: 10px;
+
+            .rating {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              span {
+                color: goldenrod;
+                font-size: 15px;
+
+                i {
+                  font-size: 12px;
+                }
+              }
+
+              p {
+                font-size: 14px;
+                margin-bottom: 0;
+                color: $color-gray;
+              }
+            }
+
+            .title {
+              font-size: 17px;
+              margin-top: 5px;
+
+              color: $main-color-text;
+            }
+
+            .details {
+              margin-top: 7px;
+              display: flex;
+              align-items: center;
+              gap: 15px;
+
+              .detail {
+                font-size: 14px;
+                color: gray;
+
+                svg {
+                  width: 18px;
+                  color: gray;
+                }
+              }
+            }
+
+            .bottom_box {
+              margin-top: 10px;
+              padding-top: 8px;
+              border-top: 1px solid rgb(213, 213, 213);
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              .profile {
+                img {
+                  border-radius: 50%;
+                  width: 30px;
+                  height: 30px;
+                  margin-right: 5px;
+                }
+
+                span {
+                  color: $color-gray;
+                  font-size: 15px;
+                }
+              }
+
+              .price {
+                font-weight: 600;
+                color: $main-color-text;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .pagination {
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        button {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: #e5f0fd;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          i {
+            color: $primary-color;
+          }
+        }
+
+        span {
+          font-size: 17px;
+          color: $color-gray;
+
+          &.active {
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -3px;
+              left: 50%;
+              transform: translateX(-50%);
+              height: 2px;
+              width: 100%;
+              background-color: $primary-color;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .head_title {
+    padding-top: 20px;
+    text-align: center;
+
+    .title {
+      font-size: 20px;
+    }
+
+    .subtitle {
+      font-size: 13px;
+    }
+  }
+
+  .layout_courses {
+    padding: 20px 0;
+
+    .line {
+      gap: 20px;
+      flex-direction: column;
+
+      .left,
+      .right {
+        width: 100%;
+      }
+
+      .left {
+        .filter_category,
+        .filter_rating,
+        .filter_instructors,
+        .filter_price {
+          padding-bottom: 15px;
+          margin-bottom: 10px;
+          .head {
+            margin-bottom: 3px;
+
+            h4 {
+              font-size: 17px;
+            }
+          }
+
+          .items {
+            .item {
+              &:not(:last-child) {
+                margin-bottom: 6px;
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        .head_boxs {
+          flex-direction: column;
+          gap: 10px;
+
+          p {
+            font-size: 14px;
+          }
+
+          .sort_by {
+            select {
+              height: 35px;
+              padding: 0px 8px;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .boxs {
+          margin-top: 20px;
+          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+          .box {
+            .image {
+              img {
+                height: 175px;
+              }
+            }
+
+            .content {
+              .rating {
+                span {
+                  font-size: 13px;
+
+                  i {
+                    font-size: 12px;
+                  }
+                }
+
+                p {
+                  font-size: 12px;
+                }
+              }
+
+              .title {
+                font-size: 15px;
+                margin-top: 3px;
+              }
+
+              .bottom_box {
+                .profile {
+                  img {
+                    width: 25px;
+                    height: 25px;
+                  }
+
+                  span {
+                    font-size: 14px;
+                  }
+                }
+
+                .price {
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end  layout_courses

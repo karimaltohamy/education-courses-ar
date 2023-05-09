@@ -1,0 +1,276 @@
+$main-color-text: #140342;
+$primary-color: #6440fb;
+$color-gray: #746898;
+
+// start form_student
+.form_student {
+  padding: 60px 0;
+
+  .line {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    .left,
+    .right {
+      width: 50%;
+    }
+
+    .left {
+      text-align: center;
+      .image {
+        img {
+          width: 80%;
+          border-radius: 10px;
+        }
+      }
+    }
+
+    .right {
+      padding: 20px;
+
+      form {
+        h2 {
+          font-size: 30px;
+          color: $main-color-text;
+          margin-bottom: 30px;
+        }
+
+        .input_item {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          margin-bottom: 20px;
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-weight: 500;
+            font-size: 18px;
+            color: $main-color-text;
+
+            svg {
+              width: 18px;
+            }
+          }
+
+          input {
+            border: none;
+            outline: none;
+            border-bottom: 2px solid rgb(220, 220, 220);
+          }
+        }
+
+        .title_radios {
+          margin-top: 30px;
+        }
+
+        .radios {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-top: 20px;
+
+          .input_radio {
+            display: flex;
+            gap: 10px;
+            label {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .shipping_service {
+          margin-top: 25px;
+          display: none;
+
+          &.active {
+            display: block;
+          }
+
+          p {
+            font-size: 14px;
+            color: #333;
+          }
+
+          img {
+            width: 100%;
+            margin-bottom: 10px;
+          }
+
+          .radios_service {
+            margin-bottom: 10px;
+
+            span {
+              font-weight: 500;
+              font-size: 14px;
+              color: $main-color-text;
+            }
+
+            .input_radio {
+              display: flex;
+              gap: 5px;
+
+              label {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .input_sevice {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            label {
+              font-weight: 500;
+              color: $main-color-text;
+              font-size: 15px;
+            }
+
+            input {
+              padding: 6px;
+              border: 1px solid rgb(228, 228, 228);
+              border-radius: 7px;
+              color: gray;
+              max-width: 300px;
+            }
+          }
+        }
+
+        .details {
+          margin-top: 20px;
+
+          p {
+            margin-bottom: 2px;
+            font-size: 14px;
+            color: gray;
+
+            &:nth-child(1) {
+              color: #333;
+              font-weight: 500;
+            }
+          }
+        }
+
+        .btn_save {
+          background-color: $primary-color;
+          color: white;
+          font-weight: 500;
+          padding: 10px;
+          width: 100%;
+          margin-top: 25px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .form_student {
+    padding: 30px 0;
+
+    .line {
+      flex-direction: column;
+      gap: 10px;
+
+      .left,
+      .right {
+        width: 100%;
+      }
+
+      .left {
+        .image {
+          img {
+            width: 50%;
+          }
+        }
+      }
+
+      .right {
+        h2 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        form {
+          .input_item {
+            margin-bottom: 10px;
+
+            label {
+              font-size: 14px;
+            }
+
+            input {
+              font-size: 12px;
+            }
+          }
+
+          .title_radios {
+            margin-top: 15px;
+            font-size: 15px;
+          }
+
+          .radios {
+            flex-direction: column;
+            margin-top: 10px;
+            align-items: start;
+          }
+
+          .shipping_service {
+            margin-top: 15px;
+
+            p {
+              font-size: 13px;
+              margin-bottom: 5px;
+            }
+
+            .radios_service {
+              margin-bottom: 7px;
+              display: block;
+              font-size: 13px;
+
+              .input_radio {
+                label {
+                  font-size: 13px;
+                }
+              }
+            }
+
+            .input_sevice {
+              label {
+                font-size: 14px;
+              }
+
+              input {
+                padding: 4px 10px;
+                font-size: 14px;
+              }
+            }
+          }
+
+          .details {
+            margin-top: 10px;
+
+            p {
+              font-size: 12px;
+
+              &:nth-child(1) {
+                font-size: 13px;
+              }
+            }
+          }
+
+          .btn_save {
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+// end form_student

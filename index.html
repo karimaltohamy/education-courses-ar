@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medix courses</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- start header -->
+      <header>
+        <div class="container">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="" />
+          </a>
+
+          <div class="links">
+            <a href="index.html" class="link">الرئيسيه</a>
+            <a href="courses.html" class="link">الكورسات</a>
+            <a href="profile-page.html" class="link">الملف الشخصي</a>
+          </div>
+
+          <div class="header_info">
+            <span class="icon_search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </span>
+            <span class="icon_shop">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+              </svg>
+            </span>
+            <a href="login.html" class="btn_login">تسجيل الدخول</a>
+            <span class="btn_menu"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <!-- start menu mobile -->
+      <div class="overflow"></div>
+      <div class="menu_mobile">
+        <div class="head">
+          <a href="#">تسجيل الدخول</a>
+          <span class="btn_close"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </span>
+        </div>
+
+        <div class="links">
+          <a href="index.html" class="link"
+            >الرئيسيه
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+
+          <a href="courses.html" class="link"
+            >الكورسات<svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+
+          <a href="profile-page.html" class="link"
+            >الملف الشخصي
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- end menu mobile -->
+
+      <!-- bg home -->
+      <div class="bg_home">
+        <img src="images/bg-home.png" alt="" />
+      </div>
+      <!-- bg home -->
+
+      <!-- start hero -->
+      <div class="hero_section">
+        <div class="container">
+          <div class="line">
+            <div class="left">
+              <h1 class="title_hero">
+                انضم إلينا اليوم أكثر من <span>+30.000</span> دورة تعليمية عبر
+                الإنترنت
+              </h1>
+              <div class="btns">
+                <a href="#" class="btn_getStart">ابدأ</a>
+                <button class="btn_watch">
+                  <div class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+                      />
+                    </svg>
+                  </div>
+                  شاهد الآن
+                </button>
+              </div>
+
+              <div class="info_items">
+                <div class="item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+                    />
+                  </svg>
+
+                  <span>أكثر من 12 مليون طالب</span>
+                </div>
+                <div class="item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"
+                    />
+                  </svg>
+
+                  <span>أكثر من 60.000 دورة</span>
+                </div>
+                <div class="item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+                    />
+                  </svg>
+
+                  <span> تعلم أي شيء على الإنترنت</span>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="composition" id="composition">
+                <div class="img_1">
+                  <img src="images/hero-img1.png" alt="" />
+                </div>
+                <div class="img_2">
+                  <img src="images/hero-img2.png" alt="" />
+                </div>
+                <div class="img_3">
+                  <img src="images/hero-img3.png" alt="" />
+                </div>
+
+                <div class="mini_box one">
+                  <div class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="text">
+                    <h5>تهاني!</h5>
+                    <span>تم قبولك </span>
+                  </div>
+                </div>
+                <div class="mini_box two">
+                  <div class="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="text">
+                    <h5>30.000+</h5>
+                    <span>دورات مجانية </span>
+                  </div>
+                </div>
+                <div class="mini_box three">
+                  <div class="img">
+                    <img src="images/person-img.png" alt="" />
+                  </div>
+
+                  <div class="text">
+                    <h5>علي توفان</h5>
+                    <span>مصمم UX / UI</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end hero -->
+
+      <!-- start know us -->
+      <div class="know_us">
+        <div class="container">
+          <div class="line">
+            <div class="left">
+              <div class="image">
+                <img src="images/about-1.png" alt="" />
+              </div>
+              <div class="image2">
+                <img src="images/about-2.jpg" alt="" />
+              </div>
+              <div class="experience">
+                <span>12</span>
+                سنوات من الخبرة
+              </div>
+              <div class="icon_paper">
+                <img src="images/icon-paper-plan.png" alt="" />
+              </div>
+            </div>
+            <div class="right">
+              <span class="subtitle">تعرف علينا </span>
+              <h1 class="title">تنمية مهاراتك تعلم معنا من أي مكان</h1>
+              <div class="desc">
+                عند وضعها في موضعها ، لا تشكل جملًا بمعنى كامل ، ولكنها تعطي
+                الحياة لنص اختبار مفيد لملء الفراغات التي يتم شغلها لاحقًا من
+                نصوص مخصصة كتبها متخصصون في الاتصال.
+              </div>
+              <div class="row features">
+                <div class="col-12 col-md-6 feature">
+                  <i class="fa-solid fa-check"></i>
+                  <span> مدربين خبراء</span>
+                </div>
+                <div class="col-12 col-md-6 feature">
+                  <i class="fa-solid fa-check"></i>
+                  <span> تعليم على الانترنت</span>
+                </div>
+                <div class="col-12 col-md-6 feature">
+                  <i class="fa-solid fa-check"></i>
+                  <span> وصول مدى الحياة</span>
+                </div>
+                <div class="col-12 col-md-6 feature">
+                  <i class="fa-solid fa-check"></i>
+                  <span> نتائج رائعة</span>
+                </div>
+              </div>
+              <a href="#" class="btn_discover">إكتشف أكثر</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end know us -->
+
+      <!-- start popular courses -->
+      <div class="popular_courses">
+        <div class="container">
+          <div class="head_filter">
+            <h1>
+              اكتشف <br />
+              أفضل الدورات في العالم
+            </h1>
+
+            <div class="filter_btns">
+              <button class="btn_filter active">جميع الفئات</button>
+              <button class="btn_filter">تصميم</button>
+              <button class="btn_filter">تطوير</button>
+              <button class="btn_filter">الرسوم المتحركة</button>
+            </div>
+          </div>
+
+          <div class="boxs">
+            <div class="box">
+              <div class="iamge">
+                <img src="images/course-img-01.jpg" alt="" />
+              </div>
+              <div class="content">
+                <div class="head_box">
+                  <span class="type green">تطوير</span>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    4.8 (25)
+                  </div>
+                </div>
+
+                <div class="text">
+                  <h4 class="title_box">
+                    دورة تطوير الووردبريس للملحقات والسمات
+                  </h4>
+                  <div class="price">$47.00</div>
+                  <div class="profile">
+                    <img src="images/person-img.png" alt="" />
+                    <span>دانيل</span>
+                  </div>
+                </div>
+
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      />
+                    </svg>
+
+                    12 درسًا
+                  </div>
+
+                  <a href="" class="btn_view"
+                    >عرض التفاصيل <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="iamge">
+                <img src="images/course-img-02.jpg" alt="" />
+              </div>
+              <div class="content">
+                <div class="head_box">
+                  <span class="type green">تطوير</span>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    4.8 (25)
+                  </div>
+                </div>
+
+                <div class="text">
+                  <h4 class="title_box">
+                    إتقان محرّر مستندات Google: مستندات مجانية عبر الإنترنت
+                    للاستخدام الشخصي
+                  </h4>
+                  <div class="price">$47.00</div>
+                  <div class="profile">
+                    <img src="images/person-img.png" alt="" />
+                    <span>دانيل</span>
+                  </div>
+                </div>
+
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      />
+                    </svg>
+
+                    12 درسًا
+                  </div>
+
+                  <a href="" class="btn_view"
+                    >عرض التفاصيل <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="iamge">
+                <img src="images/course-img-05.jpg" alt="" />
+              </div>
+              <div class="content">
+                <div class="head_box">
+                  <span class="type blue">عمل</span>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    3.8 (25)
+                  </div>
+                </div>
+
+                <div class="text">
+                  <h4 class="title_box">
+                    اكتب رسائل بريد إلكتروني أفضل: تكتيكات للاتصال الجماعي
+                    الأكثر ذكاءً
+                  </h4>
+                  <div class="price">حر</div>
+                  <div class="profile">
+                    <img src="images/person-img.png" alt="" />
+                    <span>دانيل</span>
+                  </div>
+                </div>
+
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      />
+                    </svg>
+
+                    12 درسًا
+                  </div>
+
+                  <a href="" class="btn_view"
+                    >عرض التفاصيل <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="iamge">
+                <img src="images/course-img-06.jpg" alt="" />
+              </div>
+              <div class="content">
+                <div class="head_box">
+                  <span class="type green">تطوير</span>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    4.8 (25)
+                  </div>
+                </div>
+
+                <div class="text">
+                  <h4 class="title_box">
+                    دورة تطوير الووردبريس للملحقات والسمات
+                  </h4>
+                  <div class="price">$47.00</div>
+                  <div class="profile">
+                    <img src="images/person-img.png" alt="" />
+                    <span>دانيل</span>
+                  </div>
+                </div>
+
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      />
+                    </svg>
+
+                    12 درسًا
+                  </div>
+
+                  <a href="" class="btn_view"
+                    >عرض التفاصيل <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="iamge">
+                <img src="images/course-img-02.jpg" alt="" />
+              </div>
+              <div class="content">
+                <div class="head_box">
+                  <span class="type green">تطوير</span>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    4.8 (25)
+                  </div>
+                </div>
+
+                <div class="text">
+                  <h4 class="title_box">
+                    إتقان محرّر مستندات Google: مستندات مجانية عبر الإنترنت
+                    للاستخدام الشخصي
+                  </h4>
+                  <div class="price">$47.00</div>
+                  <div class="profile">
+                    <img src="images/person-img.png" alt="" />
+                    <span>دانيل</span>
+                  </div>
+                </div>
+
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      />
+                    </svg>
+
+                    12 درسًا
+                  </div>
+
+                  <a href="" class="btn_view"
+                    >عرض التفاصيل <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="iamge">
+                <img src="images/course-img-03.jpg" alt="" />
+              </div>
+              <div class="content">
+                <div class="head_box">
+                  <span class="type blue">عمل</span>
+                  <div class="rate">
+                    <i class="fa-solid fa-star"></i>
+                    3.8 (25)
+                  </div>
+                </div>
+
+                <div class="text">
+                  <h4 class="title_box">
+                    اكتب رسائل بريد إلكتروني أفضل: تكتيكات للاتصال الجماعي
+                    الأكثر ذكاءً
+                  </h4>
+                  <div class="price">حر</div>
+                  <div class="profile">
+                    <img src="images/person-img.png" alt="" />
+                    <span>دانيل</span>
+                  </div>
+                </div>
+
+                <div class="bottom_box">
+                  <div class="num_leasons">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z"
+                      />
+                    </svg>
+
+                    12 درسًا
+                  </div>
+
+                  <a href="" class="btn_view"
+                    >عرض التفاصيل <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container_btn">
+            <a href="#" class="btn_All">اكتشف جميع الدورات</a>
+          </div>
+        </div>
+      </div>
+      <!-- end popular courses -->
+
+      <!-- start features-section -->
+      <div class="features_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-6 col-lg-3">
+              <div class="box">
+                <img src="images/website-codes.png" alt="" />
+                <h4>الشهادات <br />على الإنترنت</h4>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3">
+              <div class="box">
+                <img src="images/front-end.png" alt="" />
+
+                <h4 class="title">
+                  أعلى <br />
+                  المدربين
+                </h4>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3">
+              <div class="box">
+                <img src="images/graphic-design.png" alt="" />
+                <h4>
+                  <br />
+                  غير محدودة دروس مباشرة على الإنترنت
+                </h4>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3">
+              <div class="box">
+                <img src="images/technology.png" alt="" />
+                <h4>
+                  أعضاء <br />
+                  من ذوي الخبرة
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end features-section -->
+
+      <!-- start choose us -->
+      <div class="choose_us">
+        <div class="container">
+          <div class="line">
+            <div class="left">
+              <h1 class="title">لماذا يختارنا الطلاب لاكتساب معارفهم</h1>
+              <div class="desc">
+                عند وضعها في موضعها ، لا تشكل جملًا بمعنى كامل ، ولكنها تعطي
+                الحياة لنص اختبار مفيد لملء الفراغات التي يتم شغلها لاحقًا من
+                نصوص مخصصة كتبها متخصصون في الاتصال.
+              </div>
+              <div class="features">
+                <div class="feature">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>مدربين خبراء</span>
+                </div>
+                <div class="feature">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>تعليم على الانترنت</span>
+                </div>
+                <div class="feature">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>وصول مدى الحياة </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="right">
+              <div class="image">
+                <img src="images/choose-us-img.png" alt="" />
+              </div>
+
+              <div class="shap-02"></div>
+              <div class="shap-03">
+                <img src="images/student-shape-03.png" alt="" />
+              </div>
+              <div class="shap-04">
+                <img src="images/student-shape-04.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end chooose us -->
+
+      <!-- start trust us -->
+      <div class="trust_us">
+        <div class="container">
+          <div class="line">
+            <div class="left">
+              <h2 class="title">People Love To Learn With Educrat</h2>
+              <p class="desc">
+                يعرف مشغلو الرسم والطباعة هذا جيدًا ، في الواقع
+              </p>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <h1 class="num">9/10</h1>
+                  <p class="info">أبلغ 9/10 مستخدمين عن نتائج تعليمية أفضل</p>
+                </div>
+                <div class="col-12 col-md-6">
+                  <h1 class="num">85%</h1>
+                  <p class="info">
+                    85٪ من الطلاب يرون مسارهم الدراسي حتى الانتهاء
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <span class="subtitle">عمل عظيم</span>
+                      <p class="desc">
+                        "أعتقد أن Educrat هو أفضل موضوع رأيته على الإطلاق سنة.
+                        تصميم مذهل وسهل التخصيص والتصميم حساب الجودة الفائق على
+                        نظامه الأساسي السحابي لـ الأداء الأمثل "
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card.png" alt="" />
+                        <div class="text">
+                          <h5>كورتني</h5>
+                          <span> مصمم الويب</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <span class="subtitle">عمل عظيم</span>
+                      <p class="desc">
+                        "أعتقد أن Educrat هو أفضل موضوع رأيته على الإطلاق سنة.
+                        تصميم مذهل وسهل التخصيص والتصميم حساب الجودة الفائق على
+                        نظامه الأساسي السحابي لـ الأداء الأمثل "
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card2.png" alt="" />
+                        <div class="text">
+                          <h5>كورتني</h5>
+                          <span> مصمم الويب</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <span class="subtitle">عمل عظيم</span>
+                      <p class="desc">
+                        "أعتقد أن Educrat هو أفضل موضوع رأيته على الإطلاق سنة.
+                        تصميم مذهل وسهل التخصيص والتصميم حساب الجودة الفائق على
+                        نظامه الأساسي السحابي لـ الأداء الأمثل "
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card.png" alt="" />
+                        <div class="text">
+                          <h5>كورتني</h5>
+                          <span> مصمم الويب</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <span class="subtitle">عمل عظيم</span>
+                      <p class="desc">
+                        "أعتقد أن Educrat هو أفضل موضوع رأيته على الإطلاق سنة.
+                        تصميم مذهل وسهل التخصيص والتصميم حساب الجودة الفائق على
+                        نظامه الأساسي السحابي لـ الأداء الأمثل "
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card2.png" alt="" />
+                        <div class="text">
+                          <h5>كورتني</h5>
+                          <span> مصمم الويب</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <span class="subtitle">عمل عظيم</span>
+                      <p class="desc">
+                        "أعتقد أن Educrat هو أفضل موضوع رأيته على الإطلاق سنة.
+                        تصميم مذهل وسهل التخصيص والتصميم حساب الجودة الفائق على
+                        نظامه الأساسي السحابي لـ الأداء الأمثل "
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card.png" alt="" />
+                        <div class="text">
+                          <h5>كورتني</h5>
+                          <span> مصمم الويب</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <span class="subtitle">عمل عظيم</span>
+                      <p class="desc">
+                        "أعتقد أن Educrat هو أفضل موضوع رأيته على الإطلاق سنة.
+                        تصميم مذهل وسهل التخصيص والتصميم حساب الجودة الفائق على
+                        نظامه الأساسي السحابي لـ الأداء الأمثل "
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card2.png" alt="" />
+                        <div class="text">
+                          <h5>كورتني</h5>
+                          <span> مصمم الويب</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <span class="subtitle">عمل عظيم</span>
+                      <p class="desc">
+                        "أعتقد أن Educrat هو أفضل موضوع رأيته على الإطلاق سنة.
+                        تصميم مذهل وسهل التخصيص والتصميم حساب الجودة الفائق على
+                        نظامه الأساسي السحابي لـ الأداء الأمثل "
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card.png" alt="" />
+                        <div class="text">
+                          <h5>كورتني</h5>
+                          <span> مصمم الويب</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <span class="subtitle">عمل عظيم</span>
+                      <p class="desc">
+                        "أعتقد أن Educrat هو أفضل موضوع رأيته على الإطلاق سنة.
+                        تصميم مذهل وسهل التخصيص والتصميم حساب الجودة الفائق على
+                        نظامه الأساسي السحابي لـ الأداء الأمثل "
+                      </p>
+                      <div class="profile">
+                        <img src="images/profile-card2.png" alt="" />
+                        <div class="text">
+                          <h5>كورتني</h5>
+                          <span> مصمم الويب</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end trust us -->
+
+      <!-- start our blog -->
+      <div class="our_blog">
+        <div class="container">
+          <h3 class="title">مدونه</h3>
+          <span class="desc">
+            10000+ تصميم فريد لقائمة الدورات التدريبية عبر الإنترنت
+          </span>
+          <div class="boxs">
+            <div class="box">
+              <img src="images/course-img-05.jpg" alt="" />
+
+              <div class="text">
+                <span class="subtitle_box"> تعليم</span>
+                <h4 class="title_box">
+                  Eco- تعليم in Our Lives: We Can Change the Future
+                </h4>
+                <span class="date">16 ديسمبر 2022 </span>
+              </div>
+            </div>
+            <div class="box">
+              <img src="images/blog-1.png" alt="" />
+
+              <div class="text">
+                <span class="subtitle_box"> تعليم</span>
+                <h4 class="title_box">
+                  Eco- تعليم in Our Lives: We Can Change the Future
+                </h4>
+                <span class="date">16 ديسمبر 2022 </span>
+              </div>
+            </div>
+            <div class="box">
+              <img src="images/blog-2.jpg" alt="" />
+
+              <div class="text">
+                <span class="subtitle_box"> تعليم</span>
+                <h4 class="title_box">
+                  Eco- تعليم in Our Lives: We Can Change the Future
+                </h4>
+                <span class="date">16 ديسمبر 2022 </span>
+              </div>
+            </div>
+            <div class="box">
+              <img src="images/blog-3.jpg" alt="" />
+
+              <div class="text">
+                <span class="subtitle_box"> تعليم</span>
+                <h4 class="title_box">
+                  Eco- تعليم in Our Lives: We Can Change the Future
+                </h4>
+                <span class="date">16 ديسمبر 2022 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end our blog -->
+
+      <!-- start footer -->
+      <footer>
+        <div class="container">
+          <div class="row line">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="logo">
+                <img src="images/logo-footer.png" alt="" />
+              </div>
+              <p class="desc">
+                احصل على 26000+ من أفضل الدورات التدريبية عبر الإنترنت منا
+              </p>
+              <div class="social_media">
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+              <div class="links">
+                <h4 class="title_links">يستكشف</h4>
+                <ul class="user-links">
+                  <li><a href="#">صالة عرض</a></li>
+                  <li><a href="#">أخبار . مقالات</a></li>
+                  <li><a href="#">التعليمات</a></li>
+                  <li><a href="#">تسجيل الدخول / التسجيل </a></li>
+                  <li><a href="#">قريباً</a></li>
+                  <li><a href="#">جهات الاتصال </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+              <div class="links">
+                <h4 class="title_links">Links</h4>
+                <ul class="user-links">
+                  <li><a href="#">عنا</a></li>
+                  <li><a href="#">كورسات</a></li>
+                  <li><a href="#">مدرب</a></li>
+                  <li><a href="#">الأحداث</a></li>
+                  <li><a href="#">مدرب ملف شخصي</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <h4 class="title_links">اتصال</h4>
+              <div class="info_item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+92 (0088) 6823</span>
+              </div>
+              <div class="info_item">
+                <i class="fa-solid fa-message"></i>
+                <span>needhelp@company.com</span>
+              </div>
+              <div class="info_item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>
+                  80 شارع بروكلين جولدن. نيويورك. الولايات المتحدة الأمريكية
+                </span>
+              </div>
+
+              <div class="input_item">
+                <input type="text" placeholder="Email Address" />
+                <button>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="copy_right">© حقوق النشر 2022 لشركة 5Code</p>
+        </div>
+      </footer>
+      <!-- start footer -->
+    </main>
+
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+      integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- TimelineLite -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TimelineMax.min.js"
+      integrity="sha512-a54wh9uXa8J4g//WG0mD1V2uZvIhh2MYiTHfEQz35HidGWgOQOon+0Kyv9SMokEvEwGxOoqpKY4NJWm4Yllesg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/mouse-move.js"></script>
+    <script src="js/menu-mobile.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
